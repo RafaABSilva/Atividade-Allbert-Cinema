@@ -152,6 +152,7 @@
     <Compile Include="Models\Categorias.cs" />
     <Compile Include="Models\ContextoDB.cs" />
     <Compile Include="Models\Exibicao.cs" />
+    <Compile Include="Models\Filmes.cs" />
     <Compile Include="Models\Salas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
