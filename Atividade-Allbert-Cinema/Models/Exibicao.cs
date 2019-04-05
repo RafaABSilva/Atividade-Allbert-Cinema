@@ -6,15 +6,12 @@ using System.Web;
 
 namespace Atividade_Allbert_Cinema.Models
 {
-    public class Sala
+    public class Exibicao
     {
         public int Id { get; set; }
         [Required]
-        [MaxLength(120)]
-        public string Nome { get; set; }
+        public virtual Filmes Filme { get; set; }
         [Required]
-        public int Capacidade { get; set; }
-        [Required]
-        public float TamanhoDaTela { get; set; }
+        public virtual Salas Sala { get; set; }
     }
 }
