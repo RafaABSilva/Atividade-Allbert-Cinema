@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Atividade_Allbert_Cinema.Models
 {
-    public class Exibicao
+    public class Exibicoes
     {
         public int Id { get; set; }
         [Required]
