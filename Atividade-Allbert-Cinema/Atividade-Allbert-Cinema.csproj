@@ -144,13 +144,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CategoriasController.cs" />
+    <Compile Include="Controllers\ExibicoesController.cs" />
+    <Compile Include="Controllers\FilmesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SalasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904050113448_IntialDb.cs" />
-    <Compile Include="Migrations\201904050113448_IntialDb.Designer.cs">
-      <DependentUpon>201904050113448_IntialDb.cs</DependentUpon>
+    <Compile Include="Migrations\201904120335582_IntialDb.cs" />
+    <Compile Include="Migrations\201904120335582_IntialDb.Designer.cs">
+      <DependentUpon>201904120335582_IntialDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
@@ -196,6 +200,26 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Filmes\Create.cshtml" />
+    <Content Include="Views\Filmes\Delete.cshtml" />
+    <Content Include="Views\Filmes\Details.cshtml" />
+    <Content Include="Views\Filmes\Edit.cshtml" />
+    <Content Include="Views\Filmes\Index.cshtml" />
+    <Content Include="Views\Exibicoes\Create.cshtml" />
+    <Content Include="Views\Exibicoes\Delete.cshtml" />
+    <Content Include="Views\Exibicoes\Details.cshtml" />
+    <Content Include="Views\Exibicoes\Edit.cshtml" />
+    <Content Include="Views\Exibicoes\Index.cshtml" />
+    <Content Include="Views\Categorias\Create.cshtml" />
+    <Content Include="Views\Categorias\Delete.cshtml" />
+    <Content Include="Views\Categorias\Details.cshtml" />
+    <Content Include="Views\Categorias\Edit.cshtml" />
+    <Content Include="Views\Categorias\Index.cshtml" />
+    <Content Include="Views\Salas\Create.cshtml" />
+    <Content Include="Views\Salas\Delete.cshtml" />
+    <Content Include="Views\Salas\Details.cshtml" />
+    <Content Include="Views\Salas\Edit.cshtml" />
+    <Content Include="Views\Salas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -214,8 +238,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904050113448_IntialDb.resx">
-      <DependentUpon>201904050113448_IntialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904120335582_IntialDb.resx">
+      <DependentUpon>201904120335582_IntialDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

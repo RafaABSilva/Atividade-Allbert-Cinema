@@ -11,6 +11,7 @@ namespace Atividade_Allbert_Cinema.Migrations
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
+            SetSqlGenerator("MySql.Data.MySqlClient", new MySql.Data.Entity.MySqlMigrationSqlGenerator());
         }
 
         protected override void Seed(Atividade_Allbert_Cinema.Models.ContextoDB context)

@@ -13,7 +13,7 @@ namespace Atividade_Allbert_Cinema.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201904050113448_IntialDb"; }
+            get { return "201904120335582_IntialDb"; }
         }
         
         string IMigrationMetadata.Source
