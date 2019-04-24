@@ -183,13 +183,10 @@ C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPages.resources.dll
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csprojAssemblyReference.cache
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.CoreCompileInputs.cache
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.CopyComplete
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.dll
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.pdb
-C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
-C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.dll.config
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.dll
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.pdb
@@ -287,3 +284,5 @@ D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.pdb
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
+C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
+C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache

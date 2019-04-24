@@ -8,6 +8,7 @@ namespace Atividade_Allbert_Cinema.Models
 {
     public class Filmes
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         [MaxLength(120)]
@@ -15,8 +16,9 @@ namespace Atividade_Allbert_Cinema.Models
         [Required]
         public int Duracao { get; set; }
         [Required]
-        public int DataLancamento { get; set; }
+        public DateTime DataLancamento { get; set; }
         [Required]
+        public int CategoriaID { get; set; }
         public virtual Categorias Categoria { get; set; }
 
     }

@@ -17,7 +17,8 @@ namespace Atividade_Allbert_Cinema.Controllers
         // GET: Filmes
         public ActionResult Index()
         {
-            return View(db.Filmes.ToList());
+            var filmes = db.Filmes.Include(f => f.Categoria);
+            return View(filmes.ToList());
         }
 
         // GET: Filmes/Details/5
@@ -38,6 +39,7 @@ namespace Atividade_Allbert_Cinema.Controllers
         // GET: Filmes/Create
         public ActionResult Create()
         {
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "Id", "Descricao");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace Atividade_Allbert_Cinema.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nome,Duracao,DataLancamento")] Filmes filmes)
+        public ActionResult Create([Bind(Include = "Id,Nome,Duracao,DataLancamento,CategoriaID")] Filmes filmes)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace Atividade_Allbert_Cinema.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "Id", "Descricao", filmes.CategoriaID);
             return View(filmes);
         }
 
@@ -70,6 +73,7 @@ namespace Atividade_Allbert_Cinema.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "Id", "Descricao", filmes.CategoriaID);
             return View(filmes);
         }
 
@@ -78,7 +82,7 @@ namespace Atividade_Allbert_Cinema.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nome,Duracao,DataLancamento")] Filmes filmes)
+        public ActionResult Edit([Bind(Include = "Id,Nome,Duracao,DataLancamento,CategoriaID")] Filmes filmes)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace Atividade_Allbert_Cinema.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.CategoriaID = new SelectList(db.Categorias, "Id", "Descricao", filmes.CategoriaID);
             return View(filmes);
         }
 

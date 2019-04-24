@@ -21,14 +21,14 @@ namespace Atividade_Allbert_Cinema.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
-                        Filme_Id = c.Int(nullable: false),
-                        Sala_Id = c.Int(nullable: false),
+                        FilmeID = c.Int(nullable: false),
+                        SalaID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Filmes", t => t.Filme_Id, cascadeDelete: true)
-                .ForeignKey("dbo.Salas", t => t.Sala_Id, cascadeDelete: true)
-                .Index(t => t.Filme_Id)
-                .Index(t => t.Sala_Id);
+                .ForeignKey("dbo.Filmes", t => t.FilmeID, cascadeDelete: true)
+                .ForeignKey("dbo.Salas", t => t.SalaID, cascadeDelete: true)
+                .Index(t => t.FilmeID)
+                .Index(t => t.SalaID);
             
             CreateTable(
                 "dbo.Filmes",
@@ -37,12 +37,12 @@ namespace Atividade_Allbert_Cinema.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Nome = c.String(nullable: false, maxLength: 120, storeType: "nvarchar"),
                         Duracao = c.Int(nullable: false),
-                        DataLancamento = c.Int(nullable: false),
-                        Categoria_Id = c.Int(nullable: false),
+                        DataLancamento = c.DateTime(nullable: false, precision: 0),
+                        CategoriaID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Categorias", t => t.Categoria_Id, cascadeDelete: true)
-                .Index(t => t.Categoria_Id);
+                .ForeignKey("dbo.Categorias", t => t.CategoriaID, cascadeDelete: true)
+                .Index(t => t.CategoriaID);
             
             CreateTable(
                 "dbo.Salas",
@@ -59,12 +59,12 @@ namespace Atividade_Allbert_Cinema.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.Exibicoes", "Sala_Id", "dbo.Salas");
-            DropForeignKey("dbo.Exibicoes", "Filme_Id", "dbo.Filmes");
-            DropForeignKey("dbo.Filmes", "Categoria_Id", "dbo.Categorias");
-            DropIndex("dbo.Filmes", new[] { "Categoria_Id" });
-            DropIndex("dbo.Exibicoes", new[] { "Sala_Id" });
-            DropIndex("dbo.Exibicoes", new[] { "Filme_Id" });
+            DropForeignKey("dbo.Exibicoes", "SalaID", "dbo.Salas");
+            DropForeignKey("dbo.Exibicoes", "FilmeID", "dbo.Filmes");
+            DropForeignKey("dbo.Filmes", "CategoriaID", "dbo.Categorias");
+            DropIndex("dbo.Filmes", new[] { "CategoriaID" });
+            DropIndex("dbo.Exibicoes", new[] { "SalaID" });
+            DropIndex("dbo.Exibicoes", new[] { "FilmeID" });
             DropTable("dbo.Salas");
             DropTable("dbo.Filmes");
             DropTable("dbo.Exibicoes");

@@ -17,7 +17,8 @@ namespace Atividade_Allbert_Cinema.Controllers
         // GET: Exibicoes
         public ActionResult Index()
         {
-            return View(db.Exibicoes.ToList());
+            var exibicoes = db.Exibicoes.Include(e => e.Filme).Include(e => e.Sala);
+            return View(exibicoes.ToList());
         }
 
         // GET: Exibicoes/Details/5
@@ -38,6 +39,8 @@ namespace Atividade_Allbert_Cinema.Controllers
         // GET: Exibicoes/Create
         public ActionResult Create()
         {
+            ViewBag.FilmeID = new SelectList(db.Filmes, "Id", "Nome");
+            ViewBag.SalaID = new SelectList(db.Salas, "Id", "Nome");
             return View();
         }
 
@@ -46,7 +49,7 @@ namespace Atividade_Allbert_Cinema.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id")] Exibicoes exibicoes)
+        public ActionResult Create([Bind(Include = "Id,FilmeID,SalaID")] Exibicoes exibicoes)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +58,8 @@ namespace Atividade_Allbert_Cinema.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.FilmeID = new SelectList(db.Filmes, "Id", "Nome", exibicoes.FilmeID);
+            ViewBag.SalaID = new SelectList(db.Salas, "Id", "Nome", exibicoes.SalaID);
             return View(exibicoes);
         }
 
@@ -70,6 +75,8 @@ namespace Atividade_Allbert_Cinema.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.FilmeID = new SelectList(db.Filmes, "Id", "Nome", exibicoes.FilmeID);
+            ViewBag.SalaID = new SelectList(db.Salas, "Id", "Nome", exibicoes.SalaID);
             return View(exibicoes);
         }
 
@@ -78,7 +85,7 @@ namespace Atividade_Allbert_Cinema.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id")] Exibicoes exibicoes)
+        public ActionResult Edit([Bind(Include = "Id,FilmeID,SalaID")] Exibicoes exibicoes)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +93,8 @@ namespace Atividade_Allbert_Cinema.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.FilmeID = new SelectList(db.Filmes, "Id", "Nome", exibicoes.FilmeID);
+            ViewBag.SalaID = new SelectList(db.Salas, "Id", "Nome", exibicoes.SalaID);
             return View(exibicoes);
         }
 
