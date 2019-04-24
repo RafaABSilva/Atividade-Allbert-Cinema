@@ -152,9 +152,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904242312215_IntialDb.cs" />
-    <Compile Include="Migrations\201904242312215_IntialDb.Designer.cs">
-      <DependentUpon>201904242312215_IntialDb.cs</DependentUpon>
+    <Compile Include="Migrations\201904242341194_IntialDb.cs" />
+    <Compile Include="Migrations\201904242341194_IntialDb.Designer.cs">
+      <DependentUpon>201904242341194_IntialDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
@@ -238,8 +238,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904242312215_IntialDb.resx">
-      <DependentUpon>201904242312215_IntialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904242341194_IntialDb.resx">
+      <DependentUpon>201904242341194_IntialDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -16,6 +16,8 @@ namespace Atividade_Allbert_Cinema.Models
         [Required]
         public int Duracao { get; set; }
         [Required]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date)]
         public DateTime DataLancamento { get; set; }
         [Required]
         public int CategoriaID { get; set; }
