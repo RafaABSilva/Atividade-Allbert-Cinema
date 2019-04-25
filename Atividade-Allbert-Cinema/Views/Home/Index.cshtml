@@ -16,6 +16,8 @@
 
                 <h5 class="card-title font-weight-bold">@Html.DisplayFor(modelItem => item.Filme.Nome)</h5>
                 <p class="card-text">@Html.DisplayFor(modelItem => item.Sala.Nome)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Duracao)</p>
+                <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Categoria.Descricao)</p>
             </div>
         </div>
     </div>
