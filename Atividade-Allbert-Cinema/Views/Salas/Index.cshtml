@@ -4,42 +4,35 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-center p-5">Salas</h1>
+    </div>
+</div>
+<p class="text-center">
+    @Html.ActionLink("Adicionar", "Create", new { area = "" }, new { @class = "btn btn-success" })
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Nome)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Capacidade)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TamanhoDaTela)
-        </th>
-        <th></th>
-    </tr>
+<hr />
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nome)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Capacidade)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TamanhoDaTela)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+<div class="row text-center">
+    
+    @foreach (var item in Model)
+    {
+        <div class="col-12 col-md-4 p-3 text-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fas fa-person-booth card-img-top p-1" style="font-size:15vh;"></i>
 
-</table>
+                    <h5 class="card-title font-weight-bold">Nome: @Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <h5 class="card-title font-weight-bold">Capacidade: @Html.DisplayFor(modelItem => item.Capacidade)</h5>
+                    <h5 class="card-title font-weight-bold">Tela: @Html.DisplayFor(modelItem => item.TamanhoDaTela)</h5>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+

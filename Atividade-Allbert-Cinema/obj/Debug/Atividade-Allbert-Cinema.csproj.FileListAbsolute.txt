@@ -378,9 +378,9 @@ E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPag
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\pt-br\System.Web.WebPages.Razor.resources.dll
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csprojAssemblyReference.cache
-E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
-E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.CoreCompileInputs.cache
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.CopyComplete
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.dll
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.pdb
+E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
+E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
