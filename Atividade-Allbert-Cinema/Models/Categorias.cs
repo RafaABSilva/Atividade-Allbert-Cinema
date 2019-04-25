@@ -11,6 +11,7 @@ namespace Atividade_Allbert_Cinema.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(240)]
+        [Display(Name = "Descrição:")]
         public string Descricao { get; set; }
     }
 }

@@ -11,10 +11,13 @@ namespace Atividade_Allbert_Cinema.Models
         public int Id { get; set; }
         [Required]
         [MaxLength(120)]
+        [Display(Name = "Nome:")]
         public string Nome { get; set; }
         [Required]
+        [Display(Name = "Capacidade:")]
         public int Capacidade { get; set; }
         [Required]
-        public float TamanhoDaTela { get; set; }
+        [Display(Name = "Tamanho da Tela:")]
+        public string TamanhoDaTela { get; set; }
     }
 }
