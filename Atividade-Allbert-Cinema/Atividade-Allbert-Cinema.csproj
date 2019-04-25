@@ -154,9 +154,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904251713114_IntialDb.cs" />
-    <Compile Include="Migrations\201904251713114_IntialDb.Designer.cs">
-      <DependentUpon>201904251713114_IntialDb.cs</DependentUpon>
+    <Compile Include="Migrations\201904252313332_IntialDb.cs" />
+    <Compile Include="Migrations\201904252313332_IntialDb.Designer.cs">
+      <DependentUpon>201904252313332_IntialDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
@@ -198,7 +198,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Diagrama de Classes.cd" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -279,8 +278,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904251713114_IntialDb.resx">
-      <DependentUpon>201904251713114_IntialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904252313332_IntialDb.resx">
+      <DependentUpon>201904252313332_IntialDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

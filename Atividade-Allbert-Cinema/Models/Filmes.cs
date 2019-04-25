@@ -23,17 +23,8 @@ namespace Atividade_Allbert_Cinema.Models
         [DataType(DataType.Date)]
         public DateTime DataLancamento { get; set; }
         [Required]
-        [Display(Name = "Cetegoria:")]
+        [Display(Name = "Categoria:")]
         public int CategoriaID { get; set; }
         public virtual Categorias Categoria { get; set; }
-
-        public Exibicoes Exibicoes {
-            get {
-                throw new System.NotImplementedException();
-            }
-
-            set {
-            }
-        }
     }
 }

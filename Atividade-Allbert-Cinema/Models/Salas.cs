@@ -19,14 +19,5 @@ namespace Atividade_Allbert_Cinema.Models
         [Required]
         [Display(Name = "Tamanho da Tela:")]
         public string TamanhoDaTela { get; set; }
-
-        public Exibicoes Exibicoes {
-            get {
-                throw new System.NotImplementedException();
-            }
-
-            set {
-            }
-        }
     }
 }
