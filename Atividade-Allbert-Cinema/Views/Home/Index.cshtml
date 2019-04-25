@@ -4,26 +4,28 @@
     ViewBag.Title = "Index";
 }
 
-<h2 class="">Filmes em exibição</h2>
+<div class="row">
+    <div class="col-12">
+        <h2 class="text-center p-5">Filmes em exibição</h2>
+    </div>
+</div>
+
 
 <div class="row">
     @foreach (var item in Model)
     {
-    <div class="col-12 col-md-4 p-3 text-center">
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <i class="fas fa-ticket-alt card-img-top p-1" style="font-size:15vh;"></i>
+        <div class="col-12 col-md-4 p-3 text-center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <i class="fas fa-ticket-alt card-img-top p-1" style="font-size:15vh;"></i>
 
-                <h5 class="card-title font-weight-bold">@Html.DisplayFor(modelItem => item.Filme.Nome)</h5>
-                <p class="card-text">@Html.DisplayFor(modelItem => item.Sala.Nome)</p>
-                <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Duracao)</p>
-                <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Categoria.Descricao)</p>
+                    <h5 class="card-title font-weight-bold">@Html.DisplayFor(modelItem => item.Filme.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Sala.Nome)</p>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Duracao)</p>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Filme.Categoria.Descricao)</p>
+                </div>
             </div>
         </div>
-    </div>
     }
 </div>
-    <p>
-        @Html.ActionLink("Create New", "Create")
-    </p>
 

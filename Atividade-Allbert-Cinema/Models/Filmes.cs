@@ -11,15 +11,19 @@ namespace Atividade_Allbert_Cinema.Models
         [Key]
         public int Id { get; set; }
         [Required]
+        [Display(Name = "Nome:")]
         [MaxLength(120)]
         public string Nome { get; set; }
         [Required]
+        [Display(Name = "Duração:")]
         public int Duracao { get; set; }
         [Required]
+        [Display(Name = "Data de lançamento:")]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Date)]
         public DateTime DataLancamento { get; set; }
         [Required]
+        [Display(Name = "Cetegoria:")]
         public int CategoriaID { get; set; }
         public virtual Categorias Categoria { get; set; }
 
