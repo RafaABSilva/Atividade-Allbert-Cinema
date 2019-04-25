@@ -154,9 +154,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904250421093_IntialDb.cs" />
-    <Compile Include="Migrations\201904250421093_IntialDb.Designer.cs">
-      <DependentUpon>201904250421093_IntialDb.cs</DependentUpon>
+    <Compile Include="Migrations\201904251713114_IntialDb.cs" />
+    <Compile Include="Migrations\201904251713114_IntialDb.Designer.cs">
+      <DependentUpon>201904251713114_IntialDb.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Categorias.cs" />
@@ -278,8 +278,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904250421093_IntialDb.resx">
-      <DependentUpon>201904250421093_IntialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904251713114_IntialDb.resx">
+      <DependentUpon>201904251713114_IntialDb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

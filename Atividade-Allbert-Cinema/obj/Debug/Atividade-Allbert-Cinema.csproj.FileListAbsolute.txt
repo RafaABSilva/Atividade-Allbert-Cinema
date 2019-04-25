@@ -285,8 +285,6 @@ D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
 D:\Windows\DataUsers\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
 C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csprojAssemblyReference.cache
-C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
-C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.dll.config
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.dll
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\bin\Atividade-Allbert-Cinema.pdb
@@ -384,3 +382,5 @@ E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.pdb
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
 E:\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache
+C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade_Allbert_Cinema.Migrations.IntialDb.resources
+C:\Users\Rafael A. B. Silva\Documents\GitHub\Atividade-Allbert-Cinema\Atividade-Allbert-Cinema\obj\Debug\Atividade-Allbert-Cinema.csproj.GenerateResource.cache

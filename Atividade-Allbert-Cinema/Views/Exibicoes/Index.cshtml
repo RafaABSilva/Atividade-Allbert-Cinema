@@ -25,9 +25,18 @@
                     <h5 class="card-title font-weight-bold">Nome: @Html.DisplayFor(modelItem => item.Filme.Nome)</h5>
                     <h5 class="card-title font-weight-bold">Sala: @Html.DisplayFor(modelItem => item.Sala.Nome)</h5>
 
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    <div class="row">
+                        <div class="col-4 p-0">
+                            @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-outline-warning m-0" })
+
+                        </div>
+                        <div class="col-4 p-0">
+                            @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-outline-info m-0 mr-1" })
+                        </div>
+                        <div class="col-4  p-0">
+                            @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { @class = "btn btn-outline-danger m-0" })
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
